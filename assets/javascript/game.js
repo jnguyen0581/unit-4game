@@ -56,7 +56,20 @@ var startGame = function() {
 var addValues = function(crystal) {
     currentScore = currentScore + crystal.value;
 
+    checkWin();
+
     console.log("Your Score: " + currentScore);
+
+    var checkWin = function() {
+        if(currentScore + targetScore) (
+            alert("Sorry. You lost!");
+            console.log("You lost!")
+        )
+        else if (currentScore = targetScore)(
+            alert("Yay! You won!");
+            console.log("You won");
+        )
+    }
 }
 // ----------------------------------------------
 
