@@ -7,10 +7,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>unit-4-game</title>
 
+    <link rel="stylesheet" href="assets/css/reset.css">
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
-
-    <link rel="stylesheet" href="assets/css/reset.css">
 
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
@@ -51,10 +56,10 @@
             <div class="col-lg-3">
                 <div class="panel panel-primary border">
                     <div class="panel-heading">
-                        <h4 class="panel-title text-center" id="targetScore">target score</h4>
+                        <h4 class="panel-title text-center">target score</h4>
                     </div>
                     <div class="panel-body">
-                        <h6 class="text-center">0</h6>
+                        <h6 class="text-center" id="targetScore">0</h6>
                     </div>
                 </div>
             </div>
@@ -62,10 +67,10 @@
             <div class="col-lg-3">
                 <div class="panel panel-primary border">
                     <div class="panel-heading">
-                        <h4 class="panel-title text-center" id="yourScore">your score</h4>
+                        <h4 class="panel-title text-center">your score</h4>
                     </div>
                     <div class="panel-body">
-                        <h6 class="text-center">0</h6>
+                        <h6 class="text-center" id="yourScore">0</h6>
                     </div>
                 </div>
             </div>
@@ -77,13 +82,13 @@
 
         <div class="btn-group btn-group-lg">
             <button type="button" class="btn btn-primary"><img src="assets/css/images/images (1).jpeg" alt="" id="crystal1"
-                    style="width:75px0px;height:75px;"></button>
+                    style="width:75px;height:75px;"></button>
             <button type="button" class="btn btn-primary"><img src="assets/css/images/images (2).jpeg" alt="" id="crystal2"
-                    style="width:75px0px;height:75px;"></button>
+                    style="width:75px;height:75px;"></button>
             <button type="button" class="btn btn-primary"><img src="assets/css/images/images (3).jpeg" alt="" id="crystal3"
-                    style="width:75px0px;height:75px;"></button>
+                    style="width:75px;height:75px;"></button>
             <button type="button" class="btn btn-primary"><img src="assets/css/images/images (4).jpeg" alt="" id="crystal4"
-                    style="width:75px0px;height:75px;"></button>
+                    style="width:75px;height:75px;"></button>
 
         </div>
     </div>
@@ -94,7 +99,7 @@
             <div class="col-lg-3">
                 <div class="panel panel-primary border">
                     <div class="panel-heading">
-                        <h4 class="panel-title text-center">win count</h4>
+                        <h4 class="panel-title text-center" id="winCount">win count</h4>
                     </div>
                     <div class="panel-body">
                         <h6 class="text-center">0</h6>
@@ -105,7 +110,7 @@
             <div class="col-lg-3">
                 <div class="panel panel-primary border">
                     <div class="panel-heading">
-                        <h4 class="panel-title text-center">loss count</h4>
+                        <h4 class="panel-title text-center" id="lostCount">loss count</h4>
                     </div>
                     <div class="panel-body">
                         <h6 class="text-center">0</h6>
@@ -115,10 +120,11 @@
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous"></script>
+  
 
-    <script src="assets/javascript/game.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <!-- <script type="text/javascript" src="assets/javascript/game2.js"></script> -->
+
 </body>
 
 </html>

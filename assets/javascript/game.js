@@ -23,22 +23,19 @@ var crystal = {
 
 // -------------Current and Target scores-----------
 var currentScore = 0;
-var targetScore = 0;
+var targetScore = "";
 
 var winCount = 0;
 var lossCount = 0;
 
 
 // --------------------
-var getRandom = function(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
 
-}
-var startGame = function() {
+    function randomTargeScore () {
 
     currentScore = 0;
 
-    // targetScore = Math.floor(Math.random() * (120 - 19 +1)) + 19;
+    targetScore = Math.floor(Math.random() * 102) + 19;
 
     targetScore = getRandom(19,120);
 
@@ -47,10 +44,15 @@ var startGame = function() {
     crystal.crystal3.value = getRandom(1,12);
     crystal.crystal4.value = getRandom(1,12);
 
+    for (var i = 0; i < 4; i++) {
+
+    getRandom = (Math.floor(Math.random() * 11 ) + 1);
+
+
     $("#yourScore").html(currentScore);
     $("#targetScore").html(targetScore);
 
-    console.log("Target Score: " = targetScore);
+    // console.log("Target Score: " = targetScore);
 
     console.log("Crystal1: " + crystal.crystal1.value + " | Crystal2: " + crystal.crystal2.value | "Crystal3: " + crystal.crystal3.value | "Crystal4: " + crystal.crystal4.value);
 }
@@ -63,12 +65,12 @@ var addValues = function(crystal) {
     checkWin();
 
 
-    console.log("Your Score: " + currentScore);
+    console.log("your score: " + currentScore);
 
     var checkWin = function() {
         if(currentScore > targetScore) {
             alert("Sorry. You lost!");
-            console.log("You lost!");
+            // console.log("You lost!");
             lossCount++;
 
             $("#lossCount").html(lossCount);
@@ -76,31 +78,28 @@ var addValues = function(crystal) {
         
         else if (currentScore = targetScore) {
             alert("Yay! You won!");
-            console.log("You won");
+            // console.log("You won");
             winCount++;
 
             $("#winCount").html(winCount);
-
-            startGame();
         }
     }
 
 // ----------------------------------------------
 
 startGame();
-$("#crystal1").click(function() {
+$("#crystal1").on("click", function() {
     addValues(crystal.crystal1);
-});
+},
 
-$("#crystal2").click(function() {
+$("#crystal2").on("click",function() {
     addValues(crystal.crystal2);
-});
+},
 
-$("#crystal3").click(function() {
+$("#crystal3").on("click",function() {
     addValues(crystal.crystal3);
-});
+},
 
-$("#crystal4").click(function() {
+$("#crystal4").on("click",function() {
     addValues(crystal.crystal4);
 });
-}
