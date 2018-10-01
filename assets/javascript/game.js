@@ -90,16 +90,18 @@ var addValues = function(crystal) {
 startGame();
 $("#crystal1").on("click", function() {
     addValues(crystal.crystal1);
-},
+}),
 
 $("#crystal2").on("click",function() {
     addValues(crystal.crystal2);
-},
+}),
 
 $("#crystal3").on("click",function() {
     addValues(crystal.crystal3);
-},
+}),
 
 $("#crystal4").on("click",function() {
     addValues(crystal.crystal4);
 });
+
+    

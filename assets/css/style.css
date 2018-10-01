@@ -3,17 +3,17 @@
 body {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 18px;
-    line-height: 30px;
+    line-height: 15px;
     color: black;
     background: url("../css/images/background3.jpg");
   }
 
 .container {
     padding-top: 10px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 .col-lg-3 {
-    border: solid black
+    border: solid rgb(17, 101, 129);
 }
 
