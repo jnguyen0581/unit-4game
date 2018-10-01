@@ -87,7 +87,7 @@ var addValues = function(crystal) {
 
 // ----------------------------------------------
 
-startGame();
+startGame() 
 $("#crystal1").on("click", function() {
     addValues(crystal.crystal1);
 }),
@@ -102,6 +102,5 @@ $("#crystal3").on("click",function() {
 
 $("#crystal4").on("click",function() {
     addValues(crystal.crystal4);
-});
+})
 
-    

@@ -10,10 +10,12 @@ $("#targetScore").text(targetScore);
 
 
 
-var crystal1 = Math.floor(Math.random() * 11) + 1;
-var crystal2 = Math.floor(Math.random() * 11) + 1;
-var crystal3 = Math.floor(Math.random() * 11) + 1;
-var crystal4 = Math.floor(Math.random() * 11) + 1;
+var crystal1 = Math.floor(Math.random() * 12 - 1) + 1;
+$("#crystal1").text(crystal1);
+
+var crystal2 = Math.floor(Math.random() * 12 - 1) + 1;
+var crystal3 = Math.floor(Math.random() * 12 - 1) + 1;
+var crystal4 = Math.floor(Math.random() * 12 - 1) + 1;
 
 $("#winCount").html(winCount);
 $("#lostCount").html(lostCount);
@@ -23,12 +25,12 @@ $("#currentScore").text(count);
 
 function restartGame() {
 
-    targetNumber = Math.floor(Math.random() * 101) + 19;
+    targetNumber = Math.floor(Math.random() * 120 - 19) + 19;
     $("#targetScore").text(targetScore);
-    crystal1 = Math.floor(Math.random() * 11) + 1;
-    crystal2 = Math.floor(Math.random() * 11) + 1;
-    crystal3 = Math.floor(Math.random() * 11) + 1;
-    crystal4 = Math.floor(Math.random() * 11) + 1;
+    crystal1 = Math.floor(Math.random() * 12 - 1) + 1;
+    crystal2 = Math.floor(Math.random() * 12 - 1) + 1;
+    crystal3 = Math.floor(Math.random() * 12 - 1) + 1;
+    crystal4 = Math.floor(Math.random() * 12 - 1) + 1;
     count = 0;
     $("#currentScore").text(count);
 
